@@ -1,0 +1,77 @@
+<?php
+include_once"Connexion.php";
+// if(!empty($_POST)){
+// // post n'est pas vide, on verifie si toutes les données sont presentes
+// if(
+//     isset($_POST["txtId"],  $_POST["Nom"], $_POST["txtPostNom"], $_POST["txtPrenom"], $_POST["rdGenre"],$_POST["DateNaiss"],$_POST["rdGenre"],$_POST["txtTelephone"])
+//  && !empty($_POST["txtId"] && !empty($_POST["Nom"]) && !empty($_POST["txtPostNom"]) && !empty($_POST["txtPrenom"]) && !empty($_POST["rdGenre"]) && !empty($_POST["DateNaiss"])&& !empty($_POST["rdGenre"]) && ! empty($_POST["txtTelephone"]))
+// )
+//  {
+// //   le formulaire est complet
+// //   on récupère les données en les protégeant(failles xss)
+
+// } else{
+//    die("le formulaire est complet"); 
+// }
+// }
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimanya WORLD</title>
+    <link rel="stylesheet" href="stycomp.css">
+</head>
+<body>
+    <section>
+        <div class="client">
+            <h1>CREER UN COMPTE</h1>
+    <Form name="fClient" action="" method="POST">
+    <table align="Center" >
+<tr>
+    <td><label >Nom</label></td>
+    <td><input name="txtId" type="text" size="20" placeholder=""/></td>
+</tr>
+<tr>
+    <td><label>Post_Nom</label></td>
+    <td><input name="txtNom" type="text" size="20" placeholder=""/></td>
+</tr>
+<tr>
+    <td><label >Prenom</label></td>
+    <td><input name="txtPostNom" type="text" size="20" placeholder=""/></td>
+</tr>
+
+<tr>
+    <td><label >Genre</label></td>
+    <td><input name="rdGenre" type="radio" value="F" checked="checked"/>Feminin
+    <input name="rdGenre" type="radio" value="M"/>Masculin</td>
+</tr>
+
+<tr>
+    <td><label >Adresse mail</label></td>
+    <td><input name="txtPrenom" type="text" size="20" placeholder=""/></td>
+</tr>
+
+<tr>
+    <td><label>Mot de passe</label></td>
+    <td><input name="txtPrenom" type="text" size="20" placeholder=""/></td>
+</tr>
+
+<tr>
+    <td><label >Confirmer</label></td>
+    <td><input name="txtPrenom" type="text" size="20" placeholder=""/></td>
+</tr>
+    <td>
+        <input type="submit" name="btnEnvoi" value="Enregistrer"/>
+    </td>
+</tr>
+    </table>
+    <h2><a  href="index.html">Retour au site</a> </h2> 
+    </form>
+    </div>
+       </section>
+</body>
+</html>

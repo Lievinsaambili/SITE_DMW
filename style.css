@@ -1,0 +1,46 @@
+body{
+    background-color: rgb(10, 10, 61);
+}
+h1{
+    color: rgb(2, 2, 44);
+}
+
+#form{
+    background-color: white;
+    width: 30%;
+    margin: 170px auto;
+    padding: 50px;
+    box-shadow: 10px 10px 5px rgba(01, 11, 10);
+    border-radius: 10px 10px 5px 5px;
+}
+#form label{
+ font-size:x-large;
+}
+
+ .Retour {
+    margin-top: 20px;
+}
+
+#form input{
+    padding: 5px;
+}
+#btn{
+    color: white;
+    background-color: black;
+    text-align: center;
+    width: 200px;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: larger;
+}
+#btn:hover{
+    color: orangered;
+}
+
+@media screen and (max-width: 700px){
+    #form{
+        width: 70%;
+        padding: 40px;
+    }
+}
+
